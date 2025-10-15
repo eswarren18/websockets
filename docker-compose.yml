@@ -1,10 +1,7 @@
 volumes:
   relational-trivia:
-    external: true
   document-trivia:
-    external: true
   pgadmin-trivia:
-    external: true
 services:
   ghi:
     image: node:lts-bullseye
