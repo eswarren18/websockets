@@ -24,7 +24,7 @@ class ConnectionManager:
         self.active_connections.remove(websocket)
 
     async def send_personal_message(self, message: str, client_id: int, websocket: WebSocket):
-        payload = json.dumpts({
+        payload = json.dumps({
             "client_id": client_id,
             "content": message,
             "timestamp": timestamp(),
