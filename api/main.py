@@ -10,6 +10,7 @@ from mongo.routers import (
 )
 from postgres.routers import (
     categories as psql_categories,
+    chat as psql_chats,
     clues as psql_clues,
     games as psql_games,
     custom_games as psql_custom_games,
@@ -44,3 +45,4 @@ app.include_router(psql_categories.router)
 app.include_router(psql_clues.router)
 app.include_router(psql_games.router)
 app.include_router(psql_custom_games.router)
+app.include_router(psql_chats.router)
